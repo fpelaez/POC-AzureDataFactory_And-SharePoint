@@ -1,0 +1,21 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.Table.json",
+  "name": "InputDataset",
+  "properties": {
+    "published": false,
+    "type": "AzureBlob",
+    "linkedServiceName": "AzureStorageLinkedService",
+    "typeProperties": {
+      "folderPath": "adftutorial/",
+      "format": {
+        "type": "TextFormat"
+      }
+    },
+    "availability": {
+      "frequency": "Hour",
+      "interval": 1
+    },
+    "external": true,
+    "policy": {}
+  }
+}

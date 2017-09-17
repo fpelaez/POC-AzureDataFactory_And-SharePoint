@@ -1,0 +1,16 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.LinkedService.json",
+  "name": "AzureBatchLinkedService",
+  "properties": {
+    "description": "",
+    "hubName": "bipoc_hub",
+    "type": "AzureBatch",
+    "typeProperties": {
+      "accountName": "{Account Name}",
+      "accessKey": "{Access Key}",
+      "poolName": "{Pool Name}",
+      "batchUri": "https://northeurope.batch.azure.com",
+      "linkedServiceName": "AzureStorageLinkedService"
+    }
+  }
+}

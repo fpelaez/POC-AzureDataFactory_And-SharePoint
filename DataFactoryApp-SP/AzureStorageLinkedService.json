@@ -1,0 +1,12 @@
+﻿{
+  "$schema": "http://datafactories.schema.management.azure.com/schemas/2015-09-01/Microsoft.DataFactory.LinkedService.json",
+  "name": "AzureStorageLinkedService",
+  "properties": {
+    "description": "",
+    "hubName": "bipoc_hub",
+    "type": "AzureStorage",
+    "typeProperties": {
+      "connectionString": "{ConnectionString of Azure Storage} "
+    }
+  }
+}
